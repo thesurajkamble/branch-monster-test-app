@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.ShopFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/monsterDetailView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"/>
+
+        <Button
+            android:id="@+id/monsterDetailBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="travel"
+            android:textColor="#18689c"
+            android:layout_marginLeft="20dp"
+            app:backgroundTint="#D8E8F6"
+            app:cornerRadius="30dp"
+            app:iconTint="#D8E8F6"
+            android:layout_weight="10"/>
+
+        <TextView
+            android:id="@+id/monsterDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:text="Astrocreep"
+            android:textColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_weight="10"/>
+
+        <ImageView
+            android:id="@+id/monsterDetailImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/a_blue"
+            android:layout_weight="30"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="15"
+            android:weightSum="100"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+
+            <Button
+                android:id="@+id/addToCartButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/round_button"
+                android:text="Add to cart"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_weight="30"/>
+
+            <Button
+                android:id="@+id/buyNowButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/round_button"
+                android:text="Buy Now"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_weight="30" />
+
+            <ImageView
+                android:id="@+id/shareButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:src="@drawable/share_icon_teal"
+                android:layout_weight="15" />
+
+            <ImageView
+                android:id="@+id/notificationsButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/notification"
+                android:layout_weight="15" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/monsterDetailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:text="Branch provides the industry's leading mobile linking and measurement platforms, unifying user experience and attribution across devices, platforms, and channels." />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <ScrollView
+        android:id="@+id/monsterShopView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/monster1"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/monsterImage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/a_blue" />
+
+                <Button
+                    android:id="@+id/monsterBadge1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="travel"
+                    android:textColor="#18689c"
+                    app:backgroundTint="#D8E8F6"
+                    app:cornerRadius="30dp"
+                    app:iconTint="#D8E8F6" />
+
+                <TextView
+                    android:id="@+id/monsterTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Astrocreep"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monsterDescription1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch provides the industry's leading mobile linking and measurement platforms, unifying user experience and attribution across devices, platforms, and channels." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/monster2"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/monsterImage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/b_pink" />
+
+                <Button
+                    android:id="@+id/monsterBadge2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="retail"
+                    android:textColor="#9d172a"
+                    app:backgroundTint="#F0DEE6"
+                    app:cornerRadius="30dp"
+                    app:iconTint="#F0DEE6" />
+
+                <TextView
+                    android:id="@+id/monsterTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Starbeast"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monsterDescription2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch provides the industry's leading mobile linking and measurement platforms, unifying user experience and attribution across devices, platforms, and channels." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/monster3"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/monsterImage3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/c_green" />
+
+                <Button
+                    android:id="@+id/monsterBadge3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fintech"
+                    android:textColor="#1a6a37"
+                    app:backgroundTint="#daeae4"
+                    app:cornerRadius="30dp"
+                    app:iconTint="#daeae4" />
+
+                <TextView
+                    android:id="@+id/monsterTitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cosmic Critter"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monsterDescription3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch provides the industry's leading mobile linking and measurement platforms, unifying user experience and attribution across devices, platforms, and channels." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/monster4"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/monsterImage4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/d_orange" />
+
+                <Button
+                    android:id="@+id/monsterBadge4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lifestyle"
+                    android:textColor="#90571a"
+                    app:backgroundTint="#F2E7DE"
+                    app:cornerRadius="30dp"
+                    app:iconTint="#F2E7DE" />
+
+                <TextView
+                    android:id="@+id/monsterTitle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Galaxy Gobbler"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monsterDescription4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch provides the industry's leading mobile linking and measurement platforms, unifying user experience and attribution across devices, platforms, and channels." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/monster5"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/monsterImage5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/e_teal" />
+
+                <Button
+                    android:id="@+id/monsterBadge5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="finance"
+                    android:textColor="#00b4c5"
+                    app:backgroundTint="#d1eff6"
+                    app:cornerRadius="30dp"
+                    app:iconTint="#D1EFF6" />
+
+                <TextView
+                    android:id="@+id/monsterTitle5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cuddlekins"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monsterDescription5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch provides the industry's leading mobile linking and measurement platforms, unifying user experience and attribution across devices, platforms, and channels." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/monster6"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/monsterImage6"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/f_purple" />
+
+                <Button
+                    android:id="@+id/monsterBadge6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="qsr"
+                    android:textColor="#7d28a7"
+                    app:backgroundTint="#dfd4e8"
+                    app:cornerRadius="30dp"
+                    app:iconTint="#dfd4e8" />
+
+                <TextView
+                    android:id="@+id/monsterTitle6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pipsqueak"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monsterDescription6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch provides the industry's leading mobile linking and measurement platforms, unifying user experience and attribution across devices, platforms, and channels." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/monster7"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/monsterImage7"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/g_yellow" />
+
+                <Button
+                    android:id="@+id/monsterBadge7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="entertainment"
+                    android:textColor="#a08614"
+                    app:backgroundTint="#f5f1df"
+                    app:cornerRadius="30dp"
+                    app:iconTint="#f5f1df" />
+
+                <TextView
+                    android:id="@+id/monsterTitle7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Snugglebug"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monsterDescription7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch provides the industry's leading mobile linking and measurement platforms, unifying user experience and attribution across devices, platforms, and channels." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/monster8"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/monsterImage8"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/h_red" />
+
+                <Button
+                    android:id="@+id/monsterBadge8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ecommerce"
+                    android:textColor="#912629"
+                    app:backgroundTint="#e3d3d8"
+                    app:cornerRadius="30dp"
+                    app:iconTint="#e3d3d8" />
+
+                <TextView
+                    android:id="@+id/monsterTitle8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Little Critter"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monsterDescription8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch provides the industry's leading mobile linking and measurement platforms, unifying user experience and attribution across devices, platforms, and channels." />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </SearchView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: io.branch.sdk.android:library:5.8.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a1f6cf7806b512e8f2dad8f17c133151/transformed/library-5.8.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a1f6cf7806b512e8f2dad8f17c133151/transformed/library-5.8.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.branch.sdk.android/library/5.8.0/5c194f223ceebde71024d7227d15427d823bb776/library-5.8.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.branch.sdk.android/library/5.8.0/e81c6ad4b6687e305ee75c98485c586de1f8db8e/library-5.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
